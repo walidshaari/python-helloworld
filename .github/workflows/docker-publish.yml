@@ -57,12 +57,13 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
+            quay.io/walidshaari/python-hello:latest
+            quay.io/walidshaari/python-hello:v1.0.0
             wshaari/python-hello-world:latest
             wshaari/python-hello-world:v1.0.0
             ghcr.io/walidshaari/python-helloworld:latest
             ghcr.io/walidshaari/python-helloworld:v1.0.0
-            quay.io/walidshaari/python-hello:latest
-            quay.io/walidshaari/python-hello:v1.0.0
+            
    
         # tags: ${{ steps.meta.outputs.tags }}
         # labels: ${{ steps.meta.outputs.labels }}
