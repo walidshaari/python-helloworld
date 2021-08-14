@@ -28,12 +28,13 @@ def metrics():
 
 @app.route("/")
 def hello():
+    app.logger.info('Hala AWS Dubai UG!')
     app.logger.info('Main request successfull')
 
-    return "Hello World!"
+    return "Hala AWS Dubai UG!"
 
 if __name__ == "__main__":
     ## stream logs to a file
     logging.basicConfig(filename='app.log',level=logging.DEBUG)
     
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0',port=8080)
