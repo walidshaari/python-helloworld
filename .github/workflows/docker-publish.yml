@@ -54,6 +54,17 @@ jobs:
             wshaari/python-hello-world:1.0.0
             ghcr.io/walidshaari/python-helloworld:latest
             ghcr.io/walidshaari/python-helloworld:1.0.0
-        
+            
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          platforms: linux/arm
+          push: true
+          tags: |
+            wshaari/python-hello-world:arm
+            wshaari/python-hello-world:a1.0.0
+            ghcr.io/walidshaari/python-helloworld:arm
+            ghcr.io/walidshaari/python-helloworld:a1.0.0
         # tags: ${{ steps.meta.outputs.tags }}
         # labels: ${{ steps.meta.outputs.labels }}
