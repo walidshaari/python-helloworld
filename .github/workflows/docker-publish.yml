@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Publish Container image to Quay,GHCR, and Docker
+name: Publish container image to Quay,GHCR, and Docker Hub
 
 on:
   push:
