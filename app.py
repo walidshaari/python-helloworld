@@ -31,8 +31,7 @@ def hello():
     app.logger.info('Hala AWS Dubai UG!')
     app.logger.info('Main request successfull')
 
-    return "<center><b> Hala AWS Dubai UG!</b> </center> "
-
+    return '<center> <H1> Hala AWS Dubai UG! </H1> </center> <p style="text-align:center;"> <img src="https://www.arabianbusiness.com/public/images/2019/04/18/AWS-SUMMIT_Dr-Werner-Vogels-CTO-Amazon.jpg" width="800" height="500" alt="AWS Dubai Summit"> </p> '
 if __name__ == "__main__":
     ## stream logs to a file
     logging.basicConfig(filename='app.log',level=logging.DEBUG)
